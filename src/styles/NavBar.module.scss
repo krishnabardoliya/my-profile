@@ -1,0 +1,65 @@
+@import "../variables/Variables.scss";
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $color-background-blue;
+  padding: 3rem;
+  height: 8rem;
+  z-index: 1;
+  padding-left: 6rem;
+  border-bottom: solid rgb(238, 238, 238) 0.5px;
+
+  &__links {
+    // background-color: black;
+
+    display: flex;
+    justify-content: flex-start;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    @include respond(phone) {
+      justify-content: center;
+      padding-left: 0;
+    }
+
+    // position: absolute;
+    // float: left;
+    // left: 9rem;
+    button {
+      color: black;
+      background-color: transparent;
+      padding-right: 4rem;
+      border: none;
+      cursor: pointer;
+      font-family: $font-montserrat;
+      font-size: 1.6rem;
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2.2rem;
+      }
+      &:not(:last-child) {
+        padding-right: 10rem;
+      }
+      transition: all 0.2s;
+
+      &:hover,
+      &:active {
+        transform: translateY(-0.2rem) scale(1.1);
+
+        color: $color-orange-light;
+        // text-decoration: underline;
+      }
+    }
+  }
+}

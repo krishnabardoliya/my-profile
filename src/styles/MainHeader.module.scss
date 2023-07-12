@@ -1,0 +1,307 @@
+@import "../variables/Variables.scss";
+
+.header {
+  margin-top: 0rem;
+  padding-bottom: 10rem;
+  position: relative;
+  height: 95vh;
+  width: 100%;
+
+  background-image: linear-gradient(
+    to bottom,
+    $color-background-blue,
+    #ffecc8,
+    $color-background-pink
+  );
+
+  @include respond(phone) {
+    margin-top: -2rem;
+    height: 100vh;
+  }
+  // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &-container {
+    // background-image: url("../images/city_dribbble.gif");
+    margin: auto;
+    // background-size: cover;
+    background-repeat: no-repeat;
+    // height: 10rem;
+    // background-color: blueviolet;
+    padding-top: 15rem;
+    // height: 100%;
+    @include respond(phone) {
+      padding-top: 25rem;
+    }
+
+    h1 {
+      font-family: "Sacramento", cursive;
+      font-size: 12rem;
+      text-align: center;
+      // color: rgb(255, 94, 0);
+      animation-name: MoveDown;
+      animation-duration: 0.5s;
+      position: relative;
+      z-index: 10;
+
+      animation-fill-mode: backwards;
+      //   color: $color-orange-dark;
+
+      @include respond(tab-port) {
+        font-size: 9rem;
+      }
+    }
+
+    &-heading--secondary {
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      font-family: $font-montserrat;
+      font-size: 4rem;
+      position: relative;
+      z-index: 10;
+
+      @include respond(phone) {
+        font-size: 6rem;
+      }
+      //   background-color: blue;
+
+      &--1 {
+        // position: absolute;
+        overflow: hidden;
+        border-right: 0.15em solid orange;
+        white-space: nowrap;
+        width: 0;
+
+        animation-name: typing;
+        animation-duration: 2.5s;
+        animation-timing-function: steps(27, end);
+        animation-fill-mode: forwards;
+
+        transform: translateX(-50%);
+      }
+
+      &--2 {
+        // position: absolute;
+        // background-color: yellow;
+        margin-top: -3rem;
+
+        overflow: hidden;
+        // border-right: 0.15em solid orange;
+        white-space: nowrap;
+        // animation: typing 1.5s steps(20, end) forwards;
+
+        width: 0;
+        // background-color: blue;
+
+        animation-name: typing;
+        animation-duration: 2s;
+        animation-timing-function: steps(17, end);
+        animation-fill-mode: forwards;
+        animation-delay: 2.5s;
+
+        transform: translateX(-50%);
+      }
+
+      // &--3 {
+      //   // position: absolute;
+      //   // background-color: yellow;
+      //   margin-top: -3rem;
+
+      //   overflow: hidden;
+      //   // border-right: 0.15em solid orange;
+      //   white-space: nowrap;
+      //   // animation: typing 1.5s steps(20, end) forwards;
+
+      //   width: 0;
+      //   // background-color: blue;
+
+      //   animation-name: typing;
+      //   animation-duration: 2s;
+      //   animation-timing-function: steps(19, end);
+      //   animation-fill-mode: forwards;
+      //   animation-delay: 4.6s;
+
+      //   transform: translateX(-50%);
+      // }
+
+      &--3 {
+        // position: absolute;
+        // background-color: pink;
+        margin-top: -3rem;
+        overflow: hidden;
+
+        white-space: nowrap;
+        animation-name: typingLast;
+        animation-duration: 1.5s;
+        animation-timing-function: steps(27, end);
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+
+        width: 0;
+        // background-color: blue;
+
+        transform: translateX(-50%);
+      }
+
+      // text-align: center;
+
+      // overflow: hidden;
+      // border-right: 0.15em solid orange;
+      // white-space: nowrap;
+      // animation: typing 1.5s steps(20, end) forwards;
+
+      // width: 0;
+      // // background-color: blue;
+
+      // transform: translateX(-50%);
+      // // right: 50%;
+
+      //   color: $color-orange-light;
+    }
+
+    &-image {
+      //   position: absolute;
+
+      &--1 {
+        position: absolute;
+        top: 5%;
+        height: 20%;
+        right: 20%;
+        animation-name: MoveRight;
+        animation-fill-mode: backwards;
+        animation-delay: 0.5s;
+        animation-duration: 2s;
+        z-index: 0;
+
+        @include respond(tab-port) {
+          height: 12%;
+          right: 7%;
+        }
+        @include respond(phone) {
+          top: 5rem;
+          right: 15%;
+          height: 15%;
+        }
+      }
+
+      &--2 {
+        position: absolute;
+        height: 25%;
+        left: 13%;
+        bottom: 50%;
+        animation-name: MoveLeft;
+        // animation-delay: 1s;
+        animation-duration: 3.5s;
+        z-index: 0;
+
+        @include respond(tab-port) {
+          height: 18%;
+        }
+        @include respond(phone) {
+          height: 18%;
+          bottom: 15rem;
+        }
+      }
+    }
+
+    &-city {
+      position: absolute;
+      //   background-color: blue;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &--1 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes MoveRight {
+  0% {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+    transform: translateX(-5rem) translateY(5rem) scale(1.5);
+  }
+
+  100% {
+    display: block;
+
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+}
+@keyframes MoveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem) translateY(5rem) scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+}
+
+@keyframes MoveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  //   80% {
+  //     opacity: 1;
+  //     transform: translateY(1rem);
+  //   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    border-right: 0.15em solid orange;
+  }
+  80% {
+    width: 100%;
+  }
+  90% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+    border-right: none;
+  }
+}
+
+@keyframes typingLast {
+  0% {
+    border-right: 0.15em solid orange;
+    width: 0;
+  }
+  100% {
+    border-right: 0.15em solid orange;
+    width: 100%;
+  }
+}
+
+.btn-container {
+  margin-top: 10rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  @include respond(phone) {
+    margin-top: 5rem;
+  }
+
+  // transform: translateX(50%);
+  // position: absolute;
+  // bottom: 20%;
+  // top: 70%;
+  // left: 50%;
+  // transform: translateX(-50%);
+}
