@@ -33,4 +33,4 @@ Feel free to explore the code, make changes, and adapt it to suit your specific 
 Contributions are welcome! If you have any suggestions, bug fixes, or improvements, please open an issue or submit a pull request.
 
 # License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT](https://github.com/krishnabardoliya/my-profile/blob/main/LICENSE) License.
