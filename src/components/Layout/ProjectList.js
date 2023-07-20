@@ -1,7 +1,7 @@
 import { DirectionsSubway } from "@mui/icons-material";
 import ProjectItem from "./ProjectItem";
 import classes from "../../styles/ProjectList.module.scss";
-import MyDiaryImage from "../../images/mydiary.png";
+import InvoiceGeneratorImage from "../../images/invoice-generator.png";
 import NatoursImage from "../../images/natours.png";
 
 import ReactIcon from "../../images/react.png";
@@ -18,16 +18,16 @@ const ProjectList = () => {
   const projectItem = [
     {
       id: 1,
-      title: "My Diary",
-      link: "https://my-diary-phi.vercel.app/",
-      image: MyDiaryImage,
+      title: "Invoice Generator",
+      link: "https://krishnabardoliya.github.io/invoice-generator/",
+      image: InvoiceGeneratorImage,
       technologies: [
         { pic: ReactIcon, caption: "React" },
-        { pic: ReduxIcon, caption: "Redux" },
-        { pic: SassIcon, caption: "Sass" },
+        { pic: HTMLIcon, caption: "HTML5" },
+        { pic: CssIcon, caption: "CSS" }
       ],
       description:
-        "It is a CRUD (Create Read Update Delete) application using ReactJs and Redux Toolkit(to manage my app wide state). User can add, edit and delete diary entries. Used redux-persist npm package to save all the entries in the local storage of the user's browser. I've used CSS Modules for styling the app.",
+        "An Invoice creator project built with React. Uses jspdf-react to capture the data from the modal and convert it from canvas -> pdf.",
     },
 
     {
