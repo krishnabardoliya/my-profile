@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/my-profile/static/css/main.1f2f1ef1.css",
-    "main.js": "/my-profile/static/js/main.873c32c6.js",
+    "main.js": "/my-profile/static/js/main.c0eaa0b2.js",
     "static/media/natours.png": "/my-profile/static/media/natours.987994db945f75b0b257.png",
     "static/media/krishna.png": "/my-profile/static/media/krishna.b6370ea4ff274d7aa751.png",
     "static/media/bird-1.gif": "/my-profile/static/media/bird-1.244b24d41004b412ead9.gif",
-    "static/media/mydiary.png": "/my-profile/static/media/mydiary.d7f498e8abf3024781c9.png",
     "static/media/baloon.gif": "/my-profile/static/media/baloon.ad390134117495f0fe80.gif",
+    "static/media/invoice-generator.png": "/my-profile/static/media/invoice-generator.563616ee12e0254bc79d.png",
     "static/media/jokes.png": "/my-profile/static/media/jokes.ae9657c5460a3b25ccda.png",
     "static/media/react.png": "/my-profile/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/css.png": "/my-profile/static/media/css.9407ad358cdb22b8b1f0.png",
@@ -23,10 +23,10 @@
     "index.html": "/my-profile/index.html",
     "static/media/github.svg": "/my-profile/static/media/github.255db585f8a0eb28a1e4deb91bde207d.svg",
     "main.1f2f1ef1.css.map": "/my-profile/static/css/main.1f2f1ef1.css.map",
-    "main.873c32c6.js.map": "/my-profile/static/js/main.873c32c6.js.map"
+    "main.c0eaa0b2.js.map": "/my-profile/static/js/main.c0eaa0b2.js.map"
   },
   "entrypoints": [
     "static/css/main.1f2f1ef1.css",
-    "static/js/main.873c32c6.js"
+    "static/js/main.c0eaa0b2.js"
   ]
 }
